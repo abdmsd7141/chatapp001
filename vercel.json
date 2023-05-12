@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "slack.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/slack.js" }
+    ]
+  }
